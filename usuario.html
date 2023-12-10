@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Panel del Usuario</title>
+
+
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+        <!--Para los iconos que voy a ocupar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+        <!--External css-->
+    <link href="./" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header> <!--Barra de navegacion-->
+        <nav>
+
+            <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid container">
+                    
+                    <a href="#" class="navbar-brand">ContaConmigo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="nav">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link">Inicio</a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./nosotros.html" class="nav-link">Nosotros</a>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="./serviciouno.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ServicioC</a>
+
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <a href="./serviciodos.html" class="dropdown-item">ServicioE</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./serviciotres.html" class="dropdown-item">ServicioH</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./serviciocuatro.html" class="dropdown-item">ServicioP</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+
+                                <a href="./login.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
+                                
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <a href="./usuario.html" class="dropdown-item">Usuario</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <main> <!--Formulario-->
+            <h1 class="text-center mb-5 mt-5 text-secondary">
+                Panel de Usuario - ServiCarrito
+            </h1>
+    
+            <main><!--Formulario-->
+                <h1 class="text-center mb-5 mt-5 text-secondary">
+                
+                </h1>
+        
+                
+                <form class="container mb-5" id="productoForm">
+            
+                    <div class="mb-3">
+                        <label for="nombreProducto" class="form-label">Nombre del Producto: </label>
+                        <input type="text" class="form-control" id="nombreProducto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="marcaProducto" class="form-label">Marca del Producto: </label>
+                        <input type="text" class="form-control" id="marcaProducto" required>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="stockProducto" class="form-label">Stock del Producto: </label>
+                        <input type="number" class="form-control" id="stockProducto" min="0" required>
+                    </div>
+        
+                    <div class="text-center">
+                        
+                        <button onclick = "serviCarrito()" type="button" class="btn btn-primary w-25">Comprar</button>
+                            
+                            
+                        <button type="reset" class="btn btn-danger w-25">Borrar</button>
+                    </div>
+                </form>
+            </main>
+        
+        
+            <footer class="bg-light text-dark  mt-20 pt-5 pd-4">
+                <div class="container text-center text-md-start">
+                    <div class="row text center text-md-start">
+        
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        
+                            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Nosotros</h5>
+                            <hr class="mb-4">
+                            <p>
+                                Nuestra Cooperativa "CuentaConmigo" quiere rendir tributo a aquellos abuelos, padres, tios/as que lucharon durante toda su vida y brindarles un lugar en nuestras vidas y corazon en este puente de union solidario-acciones.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Dejanos Ayudarte</h5>
+                            <hr class="mb-4">
+                            <p>
+                                <a href="#" class="text-dark">Con un trabajo digno</a>
+                            </p>
+        
+                            <p>
+                                <a href="#" class="text-dark">Estable</a>
+                            </p>
+        
+                            <p>
+                                <a href="#" class="text-dark">Remunerado</a>
+                            </p>
+        
+                            <p>
+                                <a href="#" class="text-dark">A corde a tu tiempo disponible</a>
+                            </p>
+                        </div>
+        
+        
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Has Dinero</h5>
+                            <hr class="mb-4">
+                            <p>
+                                <a href="#" class="text-dark">Afiliate</a>
+                            </p>
+        
+                            <p>
+                                <a href="#" class="text-dark">Participa</a>
+                            </p>
+        
+                            <p>
+                                <a href="#" class="text-dark">Comparte</a>
+                            </p>
+        
+                            <p>
+                                <a href="#" class="text-dark">Colabora</a>
+                            </p>
+                        </div>
+        
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contacto</h5>
+                            <hr class="mb-4">
+                            <p>
+                                <li class="fas fa-home me-3"></li> Cooperativa ContaConmigo Posadas-Mnes Barrufaldi 3700
+                            </p>
+        
+                            <p>
+                                <li class="fas fa-envelope me-3"></li>scarfcarob@gmail.com
+                            </p>
+        
+                            <p>
+                                <li class="fas fa-phone me-3"></li>3764-5555
+                            </p>
+        
+                            <p>
+                                <li class="fas fa-print me-3"></li>3764-5555
+                            </p>
+        
+                        </div>
+        
+                        <hr class="mb-4">
+        
+                        <div class="text-center mb-2">
+        
+                            <p>
+                                Copyright Todos los derechos Reservados
+                                <a href="#"></a>
+                                <strong class="text-primary">Betlienski Carolina Scarface</strong>
+                            </p>
+                        </div>
+        
+                        <div class="text-center">
+        
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
+                                </li>
+        
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
+                                </li>
+        
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-dark"> <i class="fab fa-google-plus"></i></a>
+                                </li>
+        
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-dark"> <i class="fab fa-linkedin-in"></i></a>
+                                </li>
+        
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-dark"> <i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+        
+                        </div>
+                    </div>
+        
+                </div>
+                    
+            </footer>
+        
+            <script src="./Javascript/serviCarrito.js"></script>
+        
+        
+            <!--Bootstrap js-->
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+        
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        </main>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        <script src="./Javascript/Usuario.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

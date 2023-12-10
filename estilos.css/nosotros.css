@@ -1,0 +1,41 @@
+
+.fondo{
+    background-color: rgb(133, 174, 228); 
+}
+
+
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen1{
+    width: 670px;
+    height: 350px;
+    margin-top: 25px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.imagen2{
+    width: 670px;
+    height: 350px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.fuente{
+    font-size: 17px;
+    margin-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
